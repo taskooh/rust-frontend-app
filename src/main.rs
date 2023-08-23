@@ -11,7 +11,8 @@ fn App(cx: Scope) -> Element {
     log::debug!("App");
     cx.render(rsx! {
         div {
-            "hello world"
+            class: "py-16 flex h-32 w-full absolute top-0 border bg-gray-100",
+            div{ class: "m-auto","ヘッダーです" }
         }
     })
 }
